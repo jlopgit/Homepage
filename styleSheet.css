@@ -70,7 +70,7 @@ body, html{
 	transition: all 50ms;
 }
 
-.navbar-toggler[aria-expanded = "true"] .top{
+.navbar-toggler[aria-expanded = "true"] #top{
 	margin-top: 0px; /*so the X is centered in the box*/
 	position: absolute;
 	-ms-transform: rotate(45deg);
@@ -78,7 +78,7 @@ body, html{
 	transform: rotate(45deg);
 }
 
-.navbar-toggler[aria-expanded = "true"] .middle{
+.navbar-toggler[aria-expanded = "true"] #middle{
 	margin-top: 0px; /*so the X is centered in the box*/
 	position: absolute;
 	-ms-transform: rotate(135deg);
@@ -86,33 +86,34 @@ body, html{
 	transform: rotate(135deg);
 }
 
-.navbar-toggler[aria-expanded = "true"] .bottom{
+.navbar-toggler[aria-expanded = "true"] #bottom{
 
 	visibility: hidden;
 }
 
-.content{
+#content{
 
 	padding-top: 100px;
 }
 
-.jumbotron{
+#content .jumbotron{
 
 	background: white;
 	box-shadow: 0 4px 8px 0 gray;
 }
 
-.jumbotron .portait{
+#content .jumbotron #portrait{
 
+	width: 200px;
 	border-radius: 20%;
 }
 
-.jumbotron p{
+#content .jumbotron p{
 
 	width: 300px;
 }
 
-.jumbotron a{
+#content .jumbotron a{
 
 	color: black !important;
 }
@@ -132,9 +133,17 @@ body, html{
 		width: 60%;
 	}
 
-	.content{
+	#content{
 
+		padding-top: 70px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+
+	#content .jumbotron #portrait{
+
+		width: 100px;
+		border-radius: 20%;
+	}
+
 }
