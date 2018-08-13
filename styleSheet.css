@@ -1,10 +1,13 @@
 body, html{
 
-		background-image: url("./photos/img5.jpg");
-		height: 100%;
-		background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
+	height: 100%;
+	/*
+	background-image: url("./photos/img5.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+
+	background-color: #FFA07A;
 }
 
 .navbar{
@@ -91,29 +94,30 @@ body, html{
 	visibility: hidden;
 }
 
-#content{
+#intro{
 
 	padding-top: 100px;
 }
 
-#content .jumbotron{
+#intro .jumbotron{
 
+	padding: 30px;
 	background: white;
 	box-shadow: 0 4px 8px 0 gray;
 }
 
-#content .jumbotron #portrait{
+#intro .jumbotron #portrait{
 
 	width: 200px;
 	border-radius: 20%;
 }
 
-#content .jumbotron p{
+#intro .jumbotron p{
 
 	width: 300px;
 }
 
-#content .jumbotron a{
+#intro .jumbotron a{
 
 	color: black !important;
 }
@@ -133,16 +137,16 @@ body, html{
 		width: 60%;
 	}
 
-	#content{
+	#intro{
 
 		padding-top: 70px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 
-	#content .jumbotron #portrait{
+	#intro .jumbotron #portrait{
 
-		width: 100px;
+		width: 130px;
 		border-radius: 20%;
 	}
 
